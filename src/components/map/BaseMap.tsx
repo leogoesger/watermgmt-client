@@ -18,6 +18,8 @@ class BaseMap extends React.Component<{}, IState> {
         };
     }
 
+    private mapContainer: React.RefObject<HTMLDivElement>;
+
     public render() {
         return (
             <div style={{ margin: "20px auto" }}>
@@ -26,6 +28,10 @@ class BaseMap extends React.Component<{}, IState> {
                     mapboxApiAccessToken="pk.eyJ1IjoibGVvZ29lc2dlciIsImEiOiJjamU3dDEwZDkwNmJ5MnhwaHM1MjlydG8xIn0.UcVFjCvl3PTPI8jiOnPbYA"
                     {...this.state.viewport}
                     onViewportChange={viewport => this.setState({ viewport })}
+                />
+                <div
+                    ref={this.mapContainer}
+                    className="absolute top right left bottom"
                 />
             </div>
         );

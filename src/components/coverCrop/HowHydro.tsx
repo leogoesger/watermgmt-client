@@ -38,6 +38,7 @@ const HowHydro: React.SFC<IProps> = ({ selectedItem, updateDialogItem }) => {
                     <div
                         style={{
                             position: "relative",
+                            borderStyle: "solid",
                         }}
                     >
                         <div
