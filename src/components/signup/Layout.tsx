@@ -8,7 +8,7 @@ interface IProps {
             pathname: string;
         };
     };
-    loginQuery: (
+    signupQuery: (
         obj: { variables: { [index: string]: string } }
     ) => Promise<any>;
 }
@@ -17,20 +17,21 @@ interface IParams {
     [index: string]: string;
 }
 
-const handleSubmit = loginQuery => (obj: IParams) =>
-    loginQuery({
+const handleSubmit = signupQuery => (obj: IParams) =>
+    signupQuery({
         variables: {
+            name: obj.name,
             email: obj.email,
             password: obj.password,
         },
     });
 
-const Layout: React.SFC<IProps> = ({ history, loginQuery }) => {
+const Layout: React.SFC<IProps> = ({ history, signupQuery }) => {
     return (
         <UserForm
             history={history}
-            isSignupForm={false}
-            handleSubmit={handleSubmit(loginQuery)}
+            isSignupForm={true}
+            handleSubmit={handleSubmit(signupQuery)}
         />
     );
 };
