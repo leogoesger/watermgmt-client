@@ -6,7 +6,7 @@ import { compose, withHandlers, withState } from "recompose";
 
 import { ArrowForward } from "@material-ui/icons";
 import { coverCropHowInputOutput } from "../../utils/CC_constants";
-import BaseMap from "../map/BaseMap";
+import Map from "../../containers/Map";
 
 interface IItem {
     frequency?: string;
@@ -160,7 +160,7 @@ const HowHydro: React.SFC<IProps> = ({ selectedItem, updateDialogItem }) => {
                         Valley, and operate a typical management system that
                         includes winter cover crops.
                     </Typography>
-                    <BaseMap />
+                    <Map />
                 </li>
 
                 <li>
