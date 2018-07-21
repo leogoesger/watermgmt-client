@@ -2,7 +2,7 @@ import { Dialog, Divider, Typography } from "@material-ui/core/";
 import * as React from "react";
 import { compose, withHandlers, withState } from "recompose";
 
-import { coverCropWhyImages } from "../../utils/CC_constants";
+import { coverCropWhyImages } from "../../../utils/CC_constants";
 
 const PreviousResearch = () => (
     <div style={{ padding: "10px 20px" }}>

@@ -1,11 +1,11 @@
-import { Button, Divider, Typography } from "@material-ui/core/";
+import { Button, Divider, Typography } from "@material-ui/core";
 import * as React from "react";
 import { compose, withHandlers, withState } from "recompose";
 
-import { coverCropSlideImages, teamMembers } from "../../utils/CC_constants";
-import ContactUs from "../contactUs/ContactUs";
-import Members from "../members/Members";
-import PictureSlide from "../pictureSlide/PictureSlide";
+import { coverCropSlideImages, teamMembers } from "../../../utils/CC_constants";
+import ContactUs from "../../contactUs/ContactUs";
+import Members from "../../members/Members";
+import PictureSlide from "../../pictureSlide/PictureSlide";
 
 interface IProps {
     showMore: boolean;

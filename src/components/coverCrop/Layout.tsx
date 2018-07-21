@@ -2,12 +2,12 @@ import { Card } from "@material-ui/core/";
 import * as React from "react";
 import { Route } from "react-router-dom";
 
-import How from "./How";
+import How from "./how/How";
 import SideBar from "./SideBar";
-import What from "./What";
-import WhatL from "./WhatL";
-import Who from "./Who";
-import Why from "./Why";
+import What from "./what/What";
+import WhatL from "./whatL/WhatL";
+import Who from "./who/Who";
+import Why from "./why/Why";
 
 interface IProps {
     history: {

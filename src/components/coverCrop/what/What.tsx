@@ -2,10 +2,10 @@ import { Dialog, Divider, Typography } from "@material-ui/core/";
 import * as React from "react";
 import { compose, withHandlers, withProps, withState } from "recompose";
 
-const CoverCropImage = require("../../assets/images/coverCrop.jpg");
-const AlmondImage = require("../../assets/images/almond.jpg");
-const TomatoImage = require("../../assets/images/tomato.jpg");
-const SorghumImage = require("../../assets/images/sorghum.jpg");
+const CoverCropImage = require("../../../assets/images/coverCrop.jpg");
+const AlmondImage = require("../../../assets/images/almond.jpg");
+const TomatoImage = require("../../../assets/images/tomato.jpg");
+const SorghumImage = require("../../../assets/images/sorghum.jpg");
 
 interface IProps {
     crops: {

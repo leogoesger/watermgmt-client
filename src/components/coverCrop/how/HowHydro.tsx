@@ -1,12 +1,11 @@
-const TimeLine = require("../../assets/images/ccTimeline.png");
-
 import { Button, Dialog, Typography } from "@material-ui/core/";
-import * as React from "react";
 import { compose, withHandlers, withState } from "recompose";
-
 import { ArrowForward } from "@material-ui/icons";
-import { coverCropHowInputOutput } from "../../utils/CC_constants";
-import Map from "../../containers/Map";
+import * as React from "react";
+
+const TimeLine = require("../../../assets/images/ccTimeline.png");
+import { coverCropHowInputOutput } from "../../../utils/CC_constants";
+import Map from "../../../containers/Map";
 
 interface IItem {
     frequency?: string;
