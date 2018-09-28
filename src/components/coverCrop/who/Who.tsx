@@ -1,11 +1,11 @@
-import { Button, Divider, Typography } from "@material-ui/core";
-import * as React from "react";
-import { compose, withHandlers, withState } from "recompose";
+import { Button, Divider, Typography } from '@material-ui/core';
+import * as React from 'react';
+import { compose, withHandlers, withState } from 'recompose';
 
-import { coverCropSlideImages, teamMembers } from "../../../utils/CC_constants";
-import ContactUs from "../../contactUs/ContactUs";
-import Members from "../../members/Members";
-import PictureSlide from "../../pictureSlide/PictureSlide";
+import { coverCropSlideImages, teamMembers } from '../../../utils/CC_constants';
+import ContactUs from '../../contactUs/ContactUs';
+import Members from '../../members/Members';
+import PictureSlide from '../../pictureSlide/PictureSlide';
 
 interface IProps {
     showMore: boolean;
@@ -16,7 +16,7 @@ export const Who: React.SFC<IProps> = ({ showMore, setShowStatus }) => {
     return (
         <div>
             <Typography variant="title">Who are we?</Typography>
-            <Divider style={{ marginBottom: "16px" }} />
+            <Divider style={{ marginBottom: '16px' }} />
             <Typography variant="body1">
                 Team of interdisciplinary scientists interested in the long-term
                 viability of California agriculture and conservation of natural
@@ -26,7 +26,7 @@ export const Who: React.SFC<IProps> = ({ showMore, setShowStatus }) => {
             </Typography>
             <Typography
                 variant="subheading"
-                style={{ display: "flex", justifyContent: "center" }}
+                style={{ display: 'flex', justifyContent: 'center' }}
             >
                 How much water do cover crops use?
             </Typography>
@@ -37,16 +37,16 @@ export const Who: React.SFC<IProps> = ({ showMore, setShowStatus }) => {
 
             <Button
                 style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    margin: "10px auto",
-                    width: "20%",
+                    display: 'flex',
+                    justifyContent: 'center',
+                    margin: '10px auto',
+                    width: '20%',
                 }}
                 color="primary"
                 onClick={setShowStatus}
                 variant="outlined"
             >
-                {showMore ? "Show Less" : "Show More"}
+                {showMore ? 'Show Less' : 'Show More'}
             </Button>
             <Typography variant="subheading">More about our work</Typography>
             <Typography variant="body1">
@@ -85,7 +85,7 @@ export const Who: React.SFC<IProps> = ({ showMore, setShowStatus }) => {
 };
 
 const enhancer = compose(
-    withState("showMore", "updateShowStatus", false),
+    withState('showMore', 'updateShowStatus', false),
     withHandlers({
         setShowStatus: ({ updateShowStatus }) => () =>
             updateShowStatus((n: boolean) => !n),

@@ -1,4 +1,6 @@
 {
     "prettier.tabWidth": 4,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "prettier.singleQuote": false,
+    "typescript.preferences.quoteStyle": "double"
 }

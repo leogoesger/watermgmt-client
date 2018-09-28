@@ -1,7 +1,3 @@
-const Emma = require("../assets/images/emma.jpg");
-const Harry = require("../assets/images/harry.jpg");
-const Rupert = require("../assets/images/rupert.jpg");
-
 const Money = require("../assets/icons/money.png");
 const Water = require("../assets/icons/water.png");
 const Weight = require("../assets/icons/weight.png");
@@ -9,26 +5,43 @@ const Weight = require("../assets/icons/weight.png");
 export const teamMembers = [
     {
         description: "some description",
-        image: Emma,
+        image:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Alyssa.jpg",
         name: "Alyssa DeVincentis",
         title: "PhD Candidate in Hydrologic Sciences",
     },
     {
         description: "some description",
-        image: Harry,
-        name: "Sloane Rice",
-        title: "Junior Specialist",
+        image: "https://s3-us-west-1.amazonaws.com/funcflow/resources/sam.png",
+        name: "Sam Sandoval",
+        title: "UCE Specialist in Water Management",
     },
     {
         description: "some description",
-        image: Rupert,
+        image:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Anna.jpg",
         name: "Anna Gomes",
         title: "Undergraduate research assistant",
     },
     {
         description: "some description",
         image:
-            "https://s3-us-west-1.amazonaws.com/funcflow/resources/default.png",
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Jessica.jpg",
+        name: "Jessica Rudnick",
+        title: "PhD Candidate in Hydrologic Sciences",
+    },
+    {
+        description: "some description",
+        image:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Daniele.jpg",
+        name: "Daniele Zaccaria",
+        title: "UCE Specialist in Irrigation",
+    },
+
+    {
+        description: "some description",
+        image:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Amber.jpg",
         name: "Amber Leavitt",
         title: "Undergraduate research assistant",
     },
@@ -36,22 +49,15 @@ export const teamMembers = [
         description: "some description",
         image:
             "https://s3-us-west-1.amazonaws.com/funcflow/resources/default.png",
+        name: "Sloane Rice",
+        title: "Junior Specialist",
+    },
+    {
+        description: "some description",
+        image:
+            "https://s3-us-west-1.amazonaws.com/funcflow/resources/default.png",
         name: "Jeffrey Mitchell",
         title: "UCE Specialist in Plant Sciences",
-    },
-    {
-        description: "some description",
-        image:
-            "https://s3-us-west-1.amazonaws.com/funcflow/resources/default.png",
-        name: "Sam Sandoval",
-        title: "UCE Specialist in Water Management",
-    },
-    {
-        description: "some description",
-        image:
-            "https://s3-us-west-1.amazonaws.com/funcflow/resources/default.png",
-        name: "Daniele Zaccaria",
-        title: "UCE Specialist in Irrigation",
     },
     {
         description: "some description",
@@ -87,17 +93,252 @@ export const coverCropSlideImages = [
     {
         description: "some description",
         imageUrl:
-            "https://images.unsplash.com/photo-1468253926858-331ac6e1e97f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=578819556edaf9ed46f7a8ffb1003d46&auto=format&fit=crop&w=1650&q=80",
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/1.jpg",
     },
     {
         description: "some description",
         imageUrl:
-            "https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=de99acd648201793f9ec55f60180abb4&auto=format&fit=crop&w=1650&q=80",
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/2.jpg",
     },
     {
         description: "some description",
         imageUrl:
-            "https://images.unsplash.com/9/fields.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f0344bcf84bbf01755de972617c47935&auto=format&fit=crop&w=2254&q=80",
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/3.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/4.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/5.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/6.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/7.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/8.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/9.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/10.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/11.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/12.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/13.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/14.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/15.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/16.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/17.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/18.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/19.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/20.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/21.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/22.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/23.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/24.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/25.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/26.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/27.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/28.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/29.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/30.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/31.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/32.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/33.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/34.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/35.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/36.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/37.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/38.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/39.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/40.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/41.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/42.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/43.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/44.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/45.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/46.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/47.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/48.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/49.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/50.jpg",
     },
 ];
 
