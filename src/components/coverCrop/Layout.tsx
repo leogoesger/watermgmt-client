@@ -29,6 +29,7 @@ const Layout: React.SFC<IProps> = props => {
                 justifyContent: "space-around",
                 margin: "100px auto",
                 width: "100%",
+                minWidth: "1400px",
                 position: "absolute",
                 top: "160px",
             }}
