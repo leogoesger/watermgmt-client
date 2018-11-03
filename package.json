@@ -79,7 +79,8 @@
         "react-mapbox-helper": "^0.0.15",
         "react-router-dom": "^4.3.1",
         "recompose": "^0.27.1",
-        "typeface-roboto": "^0.0.54"
+        "typeface-roboto": "^0.0.54",
+        "webpack-dotenv-plugin": "^2.1.0"
     },
     "postcss": {}
 }

@@ -2,26 +2,23 @@ import { Card, Divider, List, ListItem, Typography } from "@material-ui/core/";
 import * as React from "react";
 
 interface IProps {
-    match: {
-        path: string;
-    };
     history: {
         push: (path: string) => void;
         location: {
             pathname: string;
         };
     };
+    match: {
+        path: string;
+    };
 }
 
 const SideBar: React.SFC<IProps> = ({ history, match }) => {
-    const path = history.location.pathname.split("/")[2] || "who-are-we";
+    const path = "who-are-we" as any;
     return (
         <Card style={{ width: "250px", height: "254px" }}>
             <List component="nav" style={{ padding: "0px" }}>
-                <ListItem
-                    button
-                    onClick={() => history.push(`${match.path}/who-are-we`)}
-                >
+                <ListItem button onClick={() => history.push(`/who-are-we`)}>
                     <Typography
                         style={
                             path === "who-are-we"
@@ -36,9 +33,7 @@ const SideBar: React.SFC<IProps> = ({ history, match }) => {
 
                 <ListItem
                     button
-                    onClick={() =>
-                        history.push(`${match.path}/what-are-cover-crops`)
-                    }
+                    onClick={() => history.push(`/what-are-cover-crops`)}
                 >
                     <Typography
                         style={
@@ -54,9 +49,7 @@ const SideBar: React.SFC<IProps> = ({ history, match }) => {
 
                 <ListItem
                     button
-                    onClick={() =>
-                        history.push(`${match.path}/why-are-we-studying`)
-                    }
+                    onClick={() => history.push(`/why-are-we-studying`)}
                 >
                     <Typography
                         style={
@@ -72,9 +65,7 @@ const SideBar: React.SFC<IProps> = ({ history, match }) => {
 
                 <ListItem
                     button
-                    onClick={() =>
-                        history.push(`${match.path}/how-are-we-studying`)
-                    }
+                    onClick={() => history.push(`/how-are-we-studying`)}
                 >
                     <Typography
                         style={
@@ -90,9 +81,7 @@ const SideBar: React.SFC<IProps> = ({ history, match }) => {
 
                 <ListItem
                     button
-                    onClick={() =>
-                        history.push(`${match.path}/what-are-we-learning`)
-                    }
+                    onClick={() => history.push(`/what-are-we-learning`)}
                 >
                     <Typography
                         style={

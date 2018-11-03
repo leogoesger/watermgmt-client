@@ -11,7 +11,9 @@ import App from "./components/App";
 import Theme from "./styles/Theme";
 
 const rootEl = document.getElementById("root");
-const client = new ApolloClient({ uri: "http://localhost:5000/api/graphql" });
+const client = new ApolloClient({
+    uri: process.env.SERVER_ADDRESS || "http://localhost:5000/api/graphql",
+});
 
 const Root: React.SFC = () => (
     <AppContainer>
@@ -30,7 +32,7 @@ render(<Root />, rootEl);
 // Hot Module Replacement API
 declare let module: { hot: any };
 
-if (module.hot) {
+if (!process.env.SERVER_ADDRESS && module.hot) {
     module.hot.accept("./components/App", () => {
         const NewApp = require("./components/App").default;
 

@@ -45,24 +45,12 @@ const Layout: React.SFC<IProps> = props => {
                 <SideBar match={props.match} history={props.history} />
                 <div>
                     <Card style={{ width: "850px", padding: "26px" }}>
-                        <Route exact path="/cover-crops/" component={Who} />
-                        <Route path="/cover-crops/who-are-we" component={Who} />
-                        <Route
-                            path="/cover-crops/what-are-cover-crops"
-                            component={What}
-                        />
-                        <Route
-                            path="/cover-crops/why-are-we-studying"
-                            component={Why}
-                        />
-                        <Route
-                            path="/cover-crops/how-are-we-studying"
-                            component={How}
-                        />
-                        <Route
-                            path="/cover-crops/what-are-we-learning"
-                            component={WhatL}
-                        />
+                        <Route exact path="/" component={Who} />
+                        <Route path="/who-are-we" component={Who} />
+                        <Route path="/what-are-cover-crops" component={What} />
+                        <Route path="/why-are-we-studying" component={Why} />
+                        <Route path="/how-are-we-studying" component={How} />
+                        <Route path="/what-are-we-learning" component={WhatL} />
                     </Card>
                 </div>
             </div>
