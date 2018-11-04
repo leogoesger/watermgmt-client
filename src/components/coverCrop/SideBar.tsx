@@ -14,7 +14,7 @@ interface IProps {
 }
 
 const SideBar: React.SFC<IProps> = ({ history, match }) => {
-    const path = "who-are-we" as any;
+    const path = history.location.pathname.split("/")[1] || "who-are-we";
     return (
         <Card style={{ width: "250px", height: "254px" }}>
             <List component="nav" style={{ padding: "0px" }}>
