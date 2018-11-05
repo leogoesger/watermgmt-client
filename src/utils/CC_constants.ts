@@ -92,21 +92,6 @@ export const coverCropSlideImages = [
     {
         description: "some description",
         imageUrl:
-            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/1.jpg",
-    },
-    {
-        description: "some description",
-        imageUrl:
-            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/2.jpg",
-    },
-    {
-        description: "some description",
-        imageUrl:
-            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/3.jpg",
-    },
-    {
-        description: "some description",
-        imageUrl:
             "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/4.jpg",
     },
     {
@@ -128,6 +113,16 @@ export const coverCropSlideImages = [
         description: "some description",
         imageUrl:
             "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/8.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/1.jpg",
+    },
+    {
+        description: "some description",
+        imageUrl:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/stream/2.jpg",
     },
     {
         description: "some description",
