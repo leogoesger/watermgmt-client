@@ -21,7 +21,8 @@
         "start": "npm run start-dev",
         "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
         "start-prod": "npm run build && node express.js",
-        "test": "jest --watch --coverage --config=configs/jest.json"
+        "test": "jest --watch --coverage --config=configs/jest.json",
+        "copy": "scp -r ./dist/* leoqiu@covercrops.ucdavis.edu:/home/leoqiu/covercrops_client"
     },
     "devDependencies": {
         "@types/history": "^4.6.2",
