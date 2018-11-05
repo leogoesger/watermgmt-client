@@ -26,7 +26,13 @@ export const Who: React.SFC<IProps> = ({ showMore, setShowStatus }) => {
             </Typography>
             <Typography
                 variant="subheading"
-                style={{ display: "flex", justifyContent: "center" }}
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    fontSize: "22px",
+                    textDecoration: "underline",
+                    color: "#0277bd",
+                }}
             >
                 How much water do cover crops use?
             </Typography>
@@ -50,6 +56,10 @@ export const Who: React.SFC<IProps> = ({ showMore, setShowStatus }) => {
             </Button>
             <Typography variant="subheading">More about our work</Typography>
             <Typography variant="body1">
+                <a href="https://climatechange.ucdavis.edu/what-can-i-do/cover-crop-your-garden/">
+                    - Cover Crop Your Garden - Science and Climate
+                </a>
+                <br />
                 <a href="https://www.newsdeeply.com/water/articles/2018/05/15/facing-climate-and-water-pressures-farmers-return-to-age-old-practice">
                     - Facing Climate and Water Pressures, Farmers Return to
                     Age-Old Practice
@@ -67,7 +77,7 @@ export const Who: React.SFC<IProps> = ({ showMore, setShowStatus }) => {
 
             <PictureSlide pictures={coverCropSlideImages} />
 
-            <Typography variant="subheading">Thanks to our sponcers</Typography>
+            <Typography variant="subheading">Thanks to our sponsors</Typography>
 
             <Typography variant="body1">
                 <a href="https://www.cdfa.ca.gov/Specialty_Crop_Competitiveness_Grants/">
@@ -79,6 +89,7 @@ export const Who: React.SFC<IProps> = ({ showMore, setShowStatus }) => {
                     and Society
                 </a>
             </Typography>
+
             <ContactUs />
         </div>
     );

@@ -1,4 +1,4 @@
-import { Button, TextField } from "@material-ui/core/";
+import { Button, Typography } from "@material-ui/core/";
 import * as React from "react";
 
 interface IStates {
@@ -27,33 +27,10 @@ class ContactForm extends React.PureComponent<IProps, IStates> {
 
     public render() {
         return (
-            <div>
-                <TextField
-                    id="name"
-                    label="Name"
-                    value={this.state.name}
-                    onChange={e => this.handleChange("name", e)}
-                    margin="normal"
-                    fullWidth
-                />
-                <TextField
-                    id="email"
-                    label="Email"
-                    value={this.state.email}
-                    onChange={e => this.handleChange("email", e)}
-                    margin="normal"
-                    fullWidth
-                />
-                <TextField
-                    id="message"
-                    label="Message"
-                    multiline
-                    rows="8"
-                    value={this.state.message}
-                    onChange={e => this.handleChange("message", e)}
-                    margin="normal"
-                    fullWidth
-                />
+            <div style={{ marginTop: "10px" }}>
+                <Typography>Alyssa DeVincentis</Typography>
+                <Typography>ajdevincentis at ucdavis.edu</Typography>
+
                 <div
                     style={{
                         display: "flex",
@@ -61,19 +38,14 @@ class ContactForm extends React.PureComponent<IProps, IStates> {
                         margin: "10px auto",
                     }}
                 >
+                    <div />
                     <Button
                         onClick={this.props.updateDialogStatus}
-                        color="primary"
-                    >
-                        Discard
-                    </Button>
-                    <Button
-                        onClick={this.props.onSubmit}
                         variant="contained"
                         color="primary"
                         autoFocus
                     >
-                        Submit
+                        Close
                     </Button>
                 </div>
             </div>

@@ -13,7 +13,7 @@ const ContactUs: React.SFC<IProps> = ({ open, updateDialogStatus }) => {
             style={{
                 display: "flex",
                 justifyContent: "center",
-                margin: "20px auto",
+                marginTop: "10px",
             }}
         >
             <Button
@@ -30,13 +30,13 @@ const ContactUs: React.SFC<IProps> = ({ open, updateDialogStatus }) => {
                     style={{
                         color: "#616161",
                         fontSize: "26px",
-                        paddingLeft: "20px",
+                        paddingLeft: "8px",
                     }}
                 >
                     Thank You!
                 </Typography>
-                <Typography style={{ marginLeft: "24px" }}>
-                    Fill out the forum, and we will get back to you shortly!
+                <Typography style={{ margin: "0px 10px 4px 10px" }}>
+                    We are working on the forum, but send us an email for now!
                 </Typography>
                 <DialogContent>
                     <ContactForm
