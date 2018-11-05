@@ -24,13 +24,13 @@ class WhatLTabs extends React.PureComponent<{}, IState> {
     renderTabItem() {
         switch (this.state.tabValue) {
             case 0:
-                return <SoilMoisture />;
-            case 1:
-                return <Evapotranspiration />;
-            case 2:
                 return <Economics />;
-            default:
+            case 1:
                 return <SoilMoisture />;
+            case 2:
+                return <Evapotranspiration />;
+            default:
+                return <Economics />;
         }
     }
 
@@ -44,9 +44,9 @@ class WhatLTabs extends React.PureComponent<{}, IState> {
                         fullWidth
                         indicatorColor="primary"
                     >
+                        <Tab label="Economics" />
                         <Tab label="Soil moisture" />
                         <Tab label="Evapotranspiration" />
-                        <Tab label="Economics" />
                     </Tabs>
                 </AppBar>
                 {this.renderTabItem()}

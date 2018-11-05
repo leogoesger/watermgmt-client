@@ -34,24 +34,25 @@ const What: React.SFC<IProps> = ({ selectedItem, updateDialogItem, crops }) => (
                 top: "150px",
             }}
         >
-            Plants grown on agriculture fields<br />
+            Plants grown on agriculture fields
+            <br />
             <span style={{ marginLeft: "80px" }}>
                 when they would otherwise be left fallow
             </span>
         </Typography>
         <Typography variant="body1">
             Growers can have winter, spring, or summer cover crops depending on
-            their growing season. Example species are annual ryegrass,
-            sudangrass, triticale, legume mix, brassicas and etc. Our research
-            looks at winter cover cropping in both annual and perennial cropping
-            systems in California. We are focused on crop systems with{" "}
+            their growing season. Example species include annual ryegrass,
+            sudangrass, triticale, legumes, and brassicas. Our research looks at
+            winter cover cropping in both annual and perennial cropping systems
+            in California. We are focused on crop systems with{" "}
             <a
                 href="https://www.cdfa.ca.gov/Statistics/PDFs/2016-17AgReport.pdf"
                 style={{ textDecoration: "underline", fontWeight: "bold" }}
             >
                 a large spatial and economic footprint
             </a>{" "}
-            our results can have a potentially large impact.
+            so our results can have a potentially large impact.
         </Typography>
         <div
             style={{

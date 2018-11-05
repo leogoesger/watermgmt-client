@@ -2,8 +2,7 @@ import * as React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import SideBar from "./coverCrop/SideBar";
-import HomeLayout from "./home/HomeLayout";
-import { Login, Navbar, Signup } from "../containers";
+import { Navbar } from "../containers";
 import { Card } from "@material-ui/core/";
 
 import How from "./coverCrop/how/How";
@@ -11,19 +10,23 @@ import What from "./coverCrop/what/What";
 import WhatL from "./coverCrop/whatL/WhatL";
 import Who from "./coverCrop/who/Who";
 import Why from "./coverCrop/why/Why";
+import Footer from "./footer/Footer";
 
 const App = () => (
     <Router>
-        <div>
+        <div
+            style={{
+                position: "relative",
+                minWidth: "1400px",
+            }}
+        >
             <Navbar />
             <div
                 style={{
                     display: "flex",
                     justifyContent: "space-around",
-                    margin: "100px auto",
                     width: "100%",
                     minWidth: "1400px",
-                    position: "absolute",
                     top: "160px",
                 }}
             >
@@ -31,8 +34,9 @@ const App = () => (
                     style={{
                         display: "flex",
                         justifyContent: "space-around",
-                        margin: "100px auto",
+                        margin: "-140px auto 0px auto",
                         width: "1200px",
+                        zIndex: 9,
                     }}
                 >
                     <Route path="*" component={SideBar} />
@@ -60,6 +64,7 @@ const App = () => (
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     </Router>
 );

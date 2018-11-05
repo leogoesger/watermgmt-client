@@ -19,16 +19,16 @@ export const teamMembers = [
     {
         description: "some description",
         image:
-            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Anna.jpg",
-        name: "Anna Gomes",
-        title: "Undergraduate research assistant",
+            "https://s3-us-west-1.amazonaws.com/funcflow/resources/default.png",
+        name: "Jeffrey Mitchell",
+        title: "UCE Specialist in Plant Sciences",
     },
     {
         description: "some description",
         image:
-            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Jessica.jpg",
-        name: "Jessica Rudnick",
-        title: "PhD Candidate in Hydrologic Sciences",
+            "http://watermanagement.ucdavis.edu/files/5615/2566/2469/sloane.png",
+        name: "Sloane Rice",
+        title: "Junior Specialist",
     },
     {
         description: "some description",
@@ -37,7 +37,13 @@ export const teamMembers = [
         name: "Daniele Zaccaria",
         title: "UCE Specialist in Irrigation",
     },
-
+    {
+        description: "some description",
+        image:
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Anna.jpg",
+        name: "Anna Gomes",
+        title: "Undergraduate research assistant",
+    },
     {
         description: "some description",
         image:
@@ -48,16 +54,9 @@ export const teamMembers = [
     {
         description: "some description",
         image:
-            "https://s3-us-west-1.amazonaws.com/funcflow/resources/default.png",
-        name: "Sloane Rice",
-        title: "Junior Specialist",
-    },
-    {
-        description: "some description",
-        image:
-            "https://s3-us-west-1.amazonaws.com/funcflow/resources/default.png",
-        name: "Jeffrey Mitchell",
-        title: "UCE Specialist in Plant Sciences",
+            "https://s3-us-west-1.amazonaws.com/funcflow/water_mgmt/Jessica.jpg",
+        name: "Jessica Rudnick",
+        title: "PhD Candidate in Hydrologic Sciences",
     },
     {
         description: "some description",
